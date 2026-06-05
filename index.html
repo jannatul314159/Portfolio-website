@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL</title>
+
+    <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<style>
+
+    
+    html {
+  scroll-behavior: smooth;
+}
+        body{font-family: 'DM Sans', sans-serif; background-color: #fffff;}
+        .timeline-dot { width: 12px; height: 12px; background: #BFA28C; border-radius: 50%; margin-top: 5px; }
+        .head-display{background-color: #f9e4c0;}
+        .display { font-family: 'Playfair Display', serif; }
+        .about-me-display {background-color: #ffffff;}
+        .contact-display{background-color: #ffffff;}
+        .skill-card { transition: box-shadow 0.2s; }
+        .skill-card:hover { box-shadow: 0 8px 32px rgba(46, 24, 8, 0.12); }
+    </style>
+
+</head>
+<body>
+    <section class="head-display">
+        <nav class=" flex items-center justify-between px-8 py-4  top-0 z-50">
+            <div class=" text-2xl font-black">Janna<span class="text-[#f97316]">tul</span></div>
+            <div class="flex items-center gap-8 text-sm font-medium">
+                <a href="#projects" class="hover:text-orange-500 transition">Projects</a>
+                <a href="#completed-courses" class="hover:text-orange-500 transition">Completed courses</a>
+                <a href="#contact" class="bg-[#f97316] text-white px-5 py-2 rounded-xl text-sm font-semibold transition hover:bg-orange-600 flex items-center gap-2">
+                    Hire Me
+                </a>
+            </div>
+
+        </nav>
+
+        <!-- Hero -->
+        <section class="relative overflow-hidden min-h-[560px] flex items-center px-16 py-12">               
+            <div class=" ml-20">
+                <p class="text-gray-500 text-lg mb-1">Hi, I am</p>
+                    <h1 class="display text-6xl font-black text-gray-900 leading-tight mb-4">Jannatul Maowa</h1>
+                    <p class="display text-gray-500 text-sm mb-8 max-w-xs">A Computer Science student passionate about web development, problem solving, and robotics. I
+                         enjoy building clean and interactive projects using modern technologies while continuously learning and improving my skills.</p>
+                    <div class="flex gap-3">
+                        <a href="cv.pdf" download class="bg-[#fd6e0a] text-white px-8 py-4 rounded font-bold hover:bg-orange-700 duration-300 flex items-center gap-2">
+                            <img src="images/Frame.svg" alt="icon" class="w-5 h-5">
+                            Download CV                       
+                        </a>
+                        <a href="#contact" class="border-2 border-[#fd6e0a] text-[#fd6e0a] px-8 py-4 rounded font-bold hover:bg-[#fd6e0a] hover:text-white duration-300 flex items-center gap-2">
+                            <img src="images/Vector.svg" alt="icon" class="w-5 h-5 ">
+                            Contact
+                        </a>
+                    </div>
+            </div>
+            <!-- Right -->
+            <div class="absolute right-0 bottom-0 z-10 flex items-end">
+                <div class="w-200 h-150 flex items-end justify-center overflow-hidden">
+                    <img src="images/Group 12.png" alt="">
+                <div class="w-90 h-150 flex items-end justify-center overflow-hidden absolute ">
+                    <img src="images/zz.png" alt="">
+                </div>
+            </div>
+        </section>
+    </section>
+        
+
+      
+
+
+
+    <!-- about me -->
+
+    <section class="about-me-display min-h-[500px] flex items-center px-16 py-12 mx-auto text-center">
+        <div class="bg-[#ffedd8] flex flex-col items-center w-220 h-80  mx-auto text-center rounded-md ">
+            <h2 class="display text-3xl font-bold mb-4 mt-20">About Me</h2>
+            <p class=" display text-gray-500 text-sm mb-8 tracking-wide mr-8 ml-8">
+                I’m an enthusiastic CSE student with a strong interest in web development, software design, and intelligent
+                 systems. I enjoy transforming ideas into interactive and meaningful digital experiences through clean design and efficient development. 
+
+                My interests range from frontend web technologies and UI design to C++, Qt development, robotics, and IoT-based projects. I also enjoy problem 
+                solving and continuously exploring new technologies to improve both my technical and creative skills.
+                        
+            </p>
+            <div class="grid grid-cols-4 gap-4 text-sm">
+                <div><span class="text-gray-400 block">Name:</span><strong>Jannatul Maowa</strong></div>
+                <div><span class="text-gray-400 block">Email:</span><strong>jannatul314159@gmail.com</strong></div>
+                <div><span class="text-gray-400 block">Date of birth:</span><strong>3 Nov 2002</strong></div>
+                <div><span class="text-gray-400 block">From:</span><strong>Chittagong, Bangladesh</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex justify-center my-6">
+  <div class="w-150 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+</div>
+
+
+
+
+    <!-- What I do -->
+    <div class="bg-[#ffffff]">
+        <section class="min-h-[520px] py-16 px-10 max-w-4xl mx-auto text-center">
+            <h2 class="display text-3xl font-bold mb-4">What I do</h2>
+            <p class="text-[#36454F] text-sm mb-10 max-w-xl mx-auto">I am currently learning web development, focusing on HTML, CSS, Tailwind, and JavaScript while also improving my problem-solving skills in C++. I build small projects 
+                and practice regularly to strengthen my understanding of real-world software development.</p>
+            
+            
+            <div class="grid grid-cols-4 gap-2">
+
+
+                <!-- CPP -->
+                <div class="skill-card bg-gray-50 rounded-xl p-5 text-left border border-gray-100">
+                    <div class="w-15 h-15  rounded-lg flex items-center justify-center text-white text-lg mb-1">
+                        <img src="images/cpp.png" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm mb-2">Vanilla JavaScript</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.</p>
+                </div>
+
+
+                <!-- React -->
+                <div class="skill-card bg-gray-50 rounded-xl p-5 text-left border border-gray-100">
+                    <div class="w-10 h-10  rounded-lg flex items-center justify-center text-white text-lg mb-3">
+                        <img src="images/r.png" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm mb-2">React</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.</p>
+                </div>
+
+                <!-- JS -->
+                <div class="skill-card bg-gray-50 rounded-xl p-5 text-left border border-gray-100">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white text-lg mb-3">
+                        <img src="images/js.png" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm mb-2">JS</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.</p>
+                </div>
+
+                    <!-- MongoDB -->
+                <div class="skill-card bg-gray-50 rounded-xl p-5 text-left border border-gray-100">
+                    <div class="w-8 h-8  rounded-lg flex items-center justify-center text-green-400 text-lg mb-3">
+                        <img src="images/m.png" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm mb-2">MongoDB</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="flex justify-center my-6">
+  <div class="w-150 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+</div>
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="min-h-[520px] bg-[#fffff] py-18 px-8 max-w-4xl mx-auto text-center rounded-lg">
+
+    <h2 class="display text-3xl font-bold mb-10">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+        <div class=" display p-5 bg-[#FFEDCE] rounded-xl shadow text-left hover:shadow-lg duration-300">
+        <h3 class="font-bold text-lg mb-2">Self Balancing Robot</h3>
+        <p class="text-sm text-[#999999]">
+            ESP32 + MPU6050 + PID control system project.
+        </p>
+        </div>
+
+        <div class="p-5 bg-[#FFEDCE] rounded-xl shadow text-left hover:shadow-lg duration-300">
+        <h3 class="display font-bold text-lg mb-2">Book Management System</h3>
+        <p class="text-sm text-[#999999]">
+            C++ file handling project with CRUD operations.
+        </p>
+        </div>
+
+        <div class="p-5 bg-[#FFEDCE] rounded-xl shadow text-left hover:shadow-lg duration-300">
+        <h3 class="display font-bold text-lg mb-2">ALgo Visualiser</h3>
+        <p class="text-sm text-[#999999]">
+            A algorithm visualizer website using Tailwind CSS.
+        </p>
+        </div>
+
+        <div class="display p-5 bg-[#FFEDCE] rounded-xl shadow text-left hover:shadow-lg duration-300">
+        <h3 class="font-bold text-lg mb-2">Inventory Management System</h3>
+        <p class="text-sm text-[#999999]">
+            Qt C++ desktop application for product management.
+        </p>
+        </div>
+
+    </div>
+    </section>
+
+
+<div class="flex justify-center my-6">
+  <div class="w-150 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+</div>
+
+
+<!-- Completed Courses -->
+
+
+    <section id="completed-courses" display class="min-h-[520px]  py-18 px-8 max-w-4xl mx-auto text-center">
+
+        <h2 class="display text-3xl font-bold mb-12">Completed Courses</h2>
+
+        <ul class="timeline timeline-vertical">
+
+            <li>
+                <div class="timeline-start timeline-box bg-[#FFEDCE] border border-[#d3a555] text-gray-800 shadow-sm px-5 py-3 font-semibold">
+                    C/C++
+                </div>
+
+                <div class="timeline-middle">
+                    <div class="w-4 h-4 rounded-full bg-[#6d6875]"></div>
+                </div>
+
+                <hr class="bg-[#6d6875] w-1" />
+            </li>
+
+            <li>
+                <hr class="bg-[#6d6875] w-1" />
+
+                <div class="timeline-middle">
+                    <div class="w-4 h-4 rounded-full bg-[#6d6875]"></div>
+                </div>
+
+                <div class="timeline-end timeline-box bg-[#FFE8B6] border border-[#d3a555] text-gray-800 shadow-sm px-5 py-3 font-semibold">
+                    Data Structure
+                </div>
+
+                <hr class="bg-[#6d6875] w-1" />
+            </li>
+
+            <li>
+                <hr class="bg-[#6d6875] w-1" />
+
+                <div class="timeline-middle">
+                    <div class="w-4 h-4 rounded-full bg-[#6d6875]"></div>
+                </div>
+
+                <div class="timeline-start timeline-box bg-[#F8E7C9] border border-[#d3a555] text-gray-800 shadow-sm px-5 py-3 font-semibold">
+                    Algorithm
+                </div>
+
+                <hr class="bg-[#6d6875] w-1" />
+            </li>
+
+            <li>
+                <hr class="bg-[#6d6875] w-1" />
+
+                <div class="timeline-middle">
+                    <div class="w-4 h-4 rounded-full bg-[#6d6875]"></div>
+                </div>
+
+                <div class="timeline-end timeline-box bg-[#FFF1D6] border border-[#d3a555] text-gray-800 shadow-sm px-5 py-3 font-semibold">
+                    Database Management System
+                </div>
+
+                <hr class="bg-[#6d6875] w-1" />
+            </li>
+
+            <li>
+                <hr class="bg-[#6d6875] w-1" />
+
+                <div class="timeline-middle">
+                    <div class="w-4 h-4 rounded-full bg-[#6d6875]"></div>
+                </div>
+
+                <div class="timeline-start timeline-box bg-[#FFE4C4] border border-[#d3a555] text-gray-800 shadow-sm px-5 py-3 font-semibold">
+                    Compiler Design
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+
+<div class="flex justify-center my-6">
+  <div class="w-150 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+</div>
+    
+
+
+
+
+    <!-- Resume -->
+    <section class=" py-16 px-6 max-w-4xl mx-auto ">
+        <h2 class="display text-3xl font-bold text-center mb-10">My Resume</h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            
+            
+            <!-- Education -->
+            <div>
+                <h3 class="display font-bold text-lg mb-6 ">My Education</h3>
+                <div class="space-y-6 border-l border-orange-200 pl-4">
+
+                    <div>
+                        <div class="timeline-dot mb-2"></div>
+                        <h4 class="font-semibold text-sm">BSc. in Computer Science</h4>
+                        <p class="text-orange-500 text-xs">International Islamic University (2024-Current)</p>
+                        <p class="text-gray-400 text-xs mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero harum amet animi ex nostrum laudantium accusantium unde illo distinctio ab.</p>
+                        
+                    </div>
+
+                    <div>
+                        <div class="timeline-dot mb-2"></div>
+                        <h4 class="font-semibold text-sm">Higher Secondary </h4>
+                        <p class="text-orange-500 text-xs">Govt. City College, CTG</p>
+                        <p class="text-gray-400 text-xs mt-1">uygiujkh</p>
+                    </div>
+
+
+                    <div>
+                        <div class="timeline-dot mb-2"></div>
+                        <h4 class="font-semibold text-sm">Secondary</h4>
+                        <p class="text-orange-500 text-xs">Ctg Govt. Girl's High School</p>
+                        <p class="text-gray-400 text-xs mt-1">uygiujkh</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+            <!-- Experience -->
+            <div >
+                <h3 class="display font-bold text-lg mb-6">My Experience</h3>
+                <div class="space-y-6 border-l border-orange-200 pl-4">
+
+                    <div>
+                        <div class="timeline-dot"></div>
+                        <h4 class="font-bold text-sm">FFF</h4>
+                        <p class="text-orange-500 text-xs mb-1">comp</p>
+                        <p class="text-gray-400 text-xs mt-1"> details</p>
+                    </div>
+
+                    <div>
+                        <div class="timeline-dot"></div>
+                        <h4 class="font-semibold text-sm">FFF</h4>
+                        <p class="text-orange-500 text-xs">comp</p>
+                        <p class="text-gray-400 text-xs mt-1">details</p>
+                    </div>
+
+                    <div>
+                        <div class="timeline-dot"></div>
+                        <h4 class="font-semibold text-sm">FFF</h4>
+                        <p class="text-orange-500 text-xs">comp</p>
+                        <p class="text-gray-400 text-xs mt-1">details</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            
+        </div>
+        
+
+        <!-- Button -->
+        <div class="text-center mt-10">
+            <a href="#" class="inline-flex items-center gap-2 px-10 py-3 rounded-full bg-black text-white text-sm">
+            Download CV
+            </a>
+        </div>
+
+    </section>
+
+
+    
+
+<div class="flex justify-center my-6">
+  <div class="w-150 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+</div>
+
+
+
+    <!-- Contact Me -->
+    <div class="bg-[#fffff] ">
+    <section id="contact" class="contact-display py-16 px-8 max-w-4xl mx-auto ">
+        <div class="grid grid-cols-2 gap-16">
+
+            <!-- Left Side -->
+            <div>
+                <h2 class="display text-3xl font-bold mb-3">Let's Contact</h2>
+                <p class="text-gray-600 text-sm mb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consectetur?
+                </p>
+
+                <div class="flex gap-3">
+                    <a href="https://www.facebook.com/jannatul.maowa.370497" class="w-10 h-10 rounded-full">
+                        <img src="images/fb.png" alt="icon">
+                    </a>
+                    <a href="https://github.com/jannatul314159" class="w-10 h-10 rounded-full">
+                        <img src="images/g.png" alt="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/feed/" class="w-10 h-10 rounded-full">
+                        <img src="images/ll.png" alt="icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div>
+                <h2 class="display text-3xl font-bold mb-5">Let's Message me</h2>
+
+                <form action="https://formsubmit.co/jannatul314159@gmail.com" method="POST" class="space-y-3">
+
+                    <!-- disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                  
+                    <!-- optional subject -->
+                    <input type="hidden" name="_subject" value="New Portfolio Message!">
+
+                    <input 
+                        type="text" 
+                        name="name"
+                        placeholder="Your name"
+                        required
+                        class="w-full border-b border-gray-200 py-2 text-sm outline-none focus:border-orange-400 transition bg-transparent placeholder-gray-400"
+                    >
+
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="w-full border-b border-gray-200 py-2 text-sm outline-none focus:border-orange-400 transition bg-transparent placeholder-gray-400"
+                    >
+
+                    <textarea 
+                        name="message"
+                        placeholder="Message"
+                        rows="3"
+                        required
+                        class="w-full border-b border-gray-200 py-2 text-sm outline-none focus:border-orange-400 transition bg-transparent placeholder-gray-400 resize-none"
+                    ></textarea>
+
+                    <div class="pt-2">
+                        <button 
+                            type="submit"
+                            class="bg-[#fd6e0a] text-white px-8 py-4 rounded font-bold hover:bg-orange-700 duration-300 flex items-center gap-2"
+                        >
+                            Submit
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
+<!-- footer -->
+ <footer class="footer footer-horizontal footer-center  text-[#faedcd] rounded p-4 bg-[#000000]">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link link-hover">About Me</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <div class="grid grid-flow-col gap-2">
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <aside>
+    <p>Copyright © 2026 - Jannatul Maowa</p>
+  </aside>
+</footer>
+        
+</body>
+</html>
+
+
+
